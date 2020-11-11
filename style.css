@@ -1,4 +1,6 @@
-
+/* *{
+  box-sizing:border-box;
+} */
 .banner{
   background-repeat: no-repeat;
   background-size:cover;
@@ -7,7 +9,6 @@
 }
 
 .hero{
-  /* background-color: blue; */
   background-image: url('images/menstrual-hero_desktop.jpg');
   /* background-repeat: no-repeat;
   background-size:cover;
@@ -58,6 +59,8 @@ h2{
 
 .pad-detail{
   display:flex;
+  margin-top:2%;
+  margin-bottom:2%;
 }
 
 .pad-detail-text{
@@ -73,7 +76,8 @@ h2{
   background-size:cover;
   background-position: center center;
   height:450px;
-  width:46%;
+  flex:46%;
+  /* flex:50%; */
   align-items:center;
   margin-left:3%;
   margin-right:2%;
@@ -87,7 +91,11 @@ h2{
   background-size:cover;
   background-position: center center;
   height:450px;
-  width:46%;
+  flex:46%;
+  /* flex:50%; */
+  margin-right:3%;
+
+
   align-items:center;
 
   display:flex;
@@ -99,7 +107,7 @@ h2{
 }
 
 .card{
-  width: 25%;
+  flex: 25%;
   margin-left:1%;
   margin-right:1%
 }
@@ -118,7 +126,6 @@ h2{
 
 .new{
   margin-top:5%;
-  /* background-color: blue; */
   background-image: url('images/new-to-public-goods_desktop.jpg');
   /* background-repeat: no-repeat;
   background-size:cover;
@@ -133,4 +140,100 @@ h2{
 }
 .faded{
   color: #878585
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 768px) {
+
+  h2{
+    font-size:2em;
+
+  }
+  .card-section,
+  .pad-detail {
+    flex-direction: column;
+    flex:wrap;
+  }
+
+  .banner{
+    height: 550px;
+  }
+
+  .hero{
+    background-image: url('images/menstrual-hero_mobile.jpg');
+    height: 550px;
+    padding:4% 10%;
+    justify-content:center;
+  }
+
+  .hero-text{
+    width:270px;
+    text-align:center;
+    margin-top:5%;
+    /* display:flex; */
+    /* flex-wrap:wrap; */
+  }
+
+  .btn-trial{
+    margin-top:70%;
+    /* margin-bottom: 0; */
+    align-self:flex-end;
+  }
+
+  .bamboo{
+
+    background-image: url('images/bamboo_mobile.jpg');
+    /* background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height:450px; */
+    /* margin: 2% 3%; */
+    height:350px;
+  }
+
+  .bamboo-text{
+    width:80%;
+  }
+
+  .pad-detail{
+    height:900px;
+  }
+
+  .pad-detail-text{
+    width:60%;
+  }
+
+  #hand .pad-detail-text{
+    width:80%;
+    text-align:center;
+  }
+  
+  #closeup{
+    background-image: url('images/pad_detail_mobile.jpg');
+    height: 500px;
+  }
+  
+  #hand{
+    background-image: url('images/pad_in_hand_mobile.jpg');
+    height: 700px;
+    align-items:center;
+
+    /* flex:50%; */
+    /* margin-right:3%; */
+/*   
+    align-items:center;
+  
+    display:flex; */
+  }
+
+  .new{
+    /* margin-top:5%; */
+    
+    background-image: url('images/new-to-public-goods_mobile.jpg');
+ 
+  }
+
+
+
+
 }
