@@ -43,10 +43,6 @@ h2{
   align-items:center;
   color:#ffffff;
   background-image: url('images/bamboo_desktop.jpg');
-  /* background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center center;
-  height:450px; */
   margin: 2% 3%;
 }
 
@@ -54,7 +50,6 @@ h2{
   width:33%;
   color:#ffffff;
   text-align:center;
-  /* margin-left:5%; */
 }
 
 .pad-detail{
@@ -65,7 +60,6 @@ h2{
 
 .pad-detail-text{
   width:35%;
-  /* align-items:center; */
   margin-left:5%;
 
 }
@@ -77,11 +71,9 @@ h2{
   background-position: center center;
   height:450px;
   flex:46%;
-  /* flex:50%; */
   align-items:center;
   margin-left:3%;
   margin-right:2%;
-
   display:flex;
 }
 
@@ -92,10 +84,7 @@ h2{
   background-position: center center;
   height:450px;
   flex:46%;
-  /* flex:50%; */
   margin-right:3%;
-
-
   align-items:center;
 
   display:flex;
@@ -127,10 +116,6 @@ h2{
 .new{
   margin-top:5%;
   background-image: url('images/new-to-public-goods_desktop.jpg');
-  /* background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center center;
-  height:450px; */
   display:flex;
 }
 
@@ -142,12 +127,10 @@ h2{
   color: #878585
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 768px) {
 
   h2{
     font-size:2em;
-
   }
   .card-section,
   .pad-detail {
@@ -170,24 +153,16 @@ h2{
     width:270px;
     text-align:center;
     margin-top:5%;
-    /* display:flex; */
-    /* flex-wrap:wrap; */
   }
 
   .btn-trial{
     margin-top:70%;
-    /* margin-bottom: 0; */
     align-self:flex-end;
   }
 
   .bamboo{
 
     background-image: url('images/bamboo_mobile.jpg');
-    /* background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    height:450px; */
-    /* margin: 2% 3%; */
     height:350px;
   }
 
@@ -211,26 +186,18 @@ h2{
   #closeup{
     background-image: url('images/pad_detail_mobile.jpg');
     height: 500px;
+    margin: 2% 3%;
   }
   
   #hand{
     background-image: url('images/pad_in_hand_mobile.jpg');
     height: 700px;
-    align-items:center;
-
-    /* flex:50%; */
-    /* margin-right:3%; */
-/*   
-    align-items:center;
-  
-    display:flex; */
+    justify-content:center;
+    margin: 2% 3%;
   }
 
   .new{
-    /* margin-top:5%; */
-    
     background-image: url('images/new-to-public-goods_mobile.jpg');
- 
   }
 
 
