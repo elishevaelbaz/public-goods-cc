@@ -198,6 +198,11 @@ h2{
 
   .new{
     background-image: url('images/new-to-public-goods_mobile.jpg');
+    height:900px;
+  }
+
+  .new-text button{
+    display:none;
   }
 
 
